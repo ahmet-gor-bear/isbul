@@ -1921,6 +1921,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"iconic-react@npm:^0.5.0":
+  version: 0.5.0
+  resolution: "iconic-react@npm:0.5.0"
+  dependencies:
+    prop-types: ^15.7.2
+  peerDependencies:
+    react: "*"
+  checksum: ce6bd34d2a7e7efdf2265da89ee3e5f7a7ee300aebdd6de66f0407bc2eb99242a7e370cc9e8ee6e22951a6bb940fc16102a08b04b9c9ec1e6bb4f65600b91e4b
+  languageName: node
+  linkType: hard
+
 "iconv-lite@npm:^0.6.2":
   version: 0.6.3
   resolution: "iconv-lite@npm:0.6.3"
@@ -2260,6 +2271,7 @@ __metadata:
     "@types/react-dom": ^18
     eslint: ^8
     eslint-config-next: 14.2.3
+    iconic-react: ^0.5.0
     next: 14.2.3
     postcss: ^8
     prettier: ^3.2.5
@@ -3166,7 +3178,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prop-types@npm:^15.8.1":
+"prop-types@npm:^15.7.2, prop-types@npm:^15.8.1":
   version: 15.8.1
   resolution: "prop-types@npm:15.8.1"
   dependencies:
