@@ -1,4 +1,5 @@
 import { number } from "prop-types";
+import { ReactNode } from "react";
 
 export interface InfoSectinProps {
   title: string;
@@ -24,7 +25,7 @@ export type HeaderPropsType = {
 
 export type DummyDataType = {
   info: HeaderPropsType;
-  contact: DummyKeyValuePairsType[];
+  contact: DummyKeyValueIconPairsType[];
   personal: DummyKeyValuePairsType[];
   experience: DummyKeyValuePairsType[];
 };
@@ -32,4 +33,9 @@ export type DummyDataType = {
 type DummyKeyValuePairsType = {
   key: string;
   value: string;
+};
+type DummyKeyValueIconPairsType = {
+  key: string;
+  value: string;
+  icon: ReactNode;
 };

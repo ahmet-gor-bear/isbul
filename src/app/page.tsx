@@ -2,6 +2,7 @@ import Image from "next/image";
 import InfoSection from "@/components/InfoSection";
 import Header from "@/components/Header";
 import { DummyDataType, HeaderPropsType } from "@/types/types";
+import { Call, Link, Location, Sms } from "iconic-react";
 
 export default function Home() {
   const data: DummyDataType = {
@@ -16,18 +17,22 @@ export default function Home() {
       {
         key: "Adres",
         value: "Beykoz / İstanbul - Anadolu / Türkiye",
+        icon: <Location />,
       },
       {
         key: "Telefon",
         value: "+90 (555) 555 55 55",
+        icon: <Call />,
       },
       {
         key: "E-Posta",
         value: "habipagca@hotmail.com",
+        icon: <Sms />,
       },
       {
         key: "Website",
         value: "http://127.0.0.1:8000/profilim/cv/14/iletisim-bilg...",
+        icon: <Link />,
       },
     ],
     personal: [
@@ -161,8 +166,13 @@ export default function Home() {
                 {data.contact.map((el, index) => {
                   return (
                     <div key={index}>
-                      <div className={"pb-1"}>{el.key}:</div>
-                      <div className={"text-sm pb-3"}>{el.value}</div>
+                      <div className={"flex pb-1"}>
+                        <div className={"max-md:hidden mr-3"}>{el.icon}</div>
+                        {el.key}:
+                      </div>
+                      <div className={"text-sm font-light pb-3"}>
+                        {el.value}
+                      </div>
                     </div>
                   );
                 })}
